@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<!— Required meta tags —>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!— Bootstrap CSS —>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+
+<title>Romapups - Login</title>
+</head>
+
+<body>
+<!— Start menu —>
+<header>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm align-middle">
+<div class="container px-3">
+<a class="navbar-brand" href="#"><i class="bi bi-box px-2"></i>Romapups</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+</div>
+</nav>
+</header>
+<!— End of menu —>
+
+<main>
+<div class="container login-container">
+<div class="row justify-content-center">
+<div class="col-lg-4">
+<div class="card shadow-sm border-0 mb-5">
+<div class="card-header bg-dark text-white text-center h5 p-3">
+Login
+</div>
+<div class="card-body">
+<form id="login-form" method="POST" action="dashboard.html">
+<div class="form-group mb-3">
+<label for="username">Username</label>
+<input type="text" class="form-control mt-2" name="username" id="username" placeholder="Your username" required minlength="4">
+</div>
+<div class="form-group mb-3">
+<label for="password">Password</label>
+<input type="password" class="form-control mt-2" name="password" id="password" placeholder="Your password" required minlength="6">
+<i class="fa fa-fw fa-eye field_icon toggle-password"></i>
+</div>
+<div class="form-check mb-3">
+<label class="form-check-label" for="stay_log">
+<input type="checkbox" class="form-check-input" name="stay_log" id="stay_log" value="yes"> Stay login?
+</label>
+</div>
+<div class="form-group mb-2">
+<button type="submit" class="btn btn-outline-dark w-100 shadow-sm"><i class="bi bi-box-arrow-in-right"></i> Log in</button>
+</div>
+</form>
+</div>
+</div>
+<p class="text-center text-muted after-card">
+<small class="bg-white px-auto p-2 rounded">
+Don't have an account yet?
+<a href="register.html" class="text-dark">Register here</a>
+</small>
+</p>
+</div>
+</div>
+</div>
+</main>
+
+<footer class="fixed-bottom bg-body border-top py-3 text-dark">
+<div class="container">
+<small class="text-dark"><strong>&copy; 2022 - 2024 | CREATOR PANEL Romapups</strong></small>
+</div>
+</footer>
+
+<!— Bootstrap JS —>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!— jQuery —>
+<script src="https://code.jquer
+y.com/jquery-3.6.0.min.js"></script>
+
+<!— Snow effect —>
+<link href="https://cdn.jsdelivr.net/gh/Alaev-Co/snow.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/Alaev-Co/snow.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
